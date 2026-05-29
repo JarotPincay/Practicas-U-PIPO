@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>            
+        personas=[{nombre:"jarot",apellido:"pincay",edad:20, ciudad:"quito"},{nombre:"maria",apellido:"rosero",edad:25, ciudad:"guayaquil"},{nombre:"juan",apellido:"rosero",edad:30, ciudad:"quito"}]    
+        
+        var vista= personas.filter(
+            per=> per.edad>=18? 
+            console.log("Es mayor de edad, ya puede votar"):console.log("Es menor de edad, no puede votar")
+        )
+        console.log(vista)
+         vista = personas.map(per=>{
+            return { ...per, votante:per.edad>=18?"si":"no"}        })
+         console.log(vista)
+        </script>
+</body>
+</html>
