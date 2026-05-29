@@ -1,5 +1,9 @@
 {
+<<<<<<<< HEAD:logroa/bootsatrplogroa/bootstraplogro/package.json
   "name": "bootstraplogro",
+========
+  "name": "tailwind-demo",
+>>>>>>>> 24fd04e079a2e8b4929a53f0847b4bcf7d5643fc:practica formatica/tailwind-demo/package.json
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,6 +13,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+<<<<<<<< HEAD:logroa/bootsatrplogroa/bootstraplogro/package.json
     "vite": "^8.0.12"
+========
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+>>>>>>>> 24fd04e079a2e8b4929a53f0847b4bcf7d5643fc:practica formatica/tailwind-demo/package.json
   }
 }

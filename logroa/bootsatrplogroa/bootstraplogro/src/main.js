@@ -3,8 +3,11 @@ import javascriptLogo from './assets/javascript.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { setupCounter } from './counter.js'
+<<<<<<<< HEAD:logroa/bootsatrplogroa/bootstraplogro/src/main.js
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+========
+>>>>>>>> 24fd04e079a2e8b4929a53f0847b4bcf7d5643fc:practica formatica/tailwind-demo/src/main.js
 
 document.querySelector('#app').innerHTML = `
 <section id="center">
