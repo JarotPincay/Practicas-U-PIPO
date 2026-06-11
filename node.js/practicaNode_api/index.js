@@ -1,7 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { Sequelize } from 'sequelize';
+import {sequelize} from './src/config/db.js';
+
+import {Equipo} from './src/models/EquipoModel.js';
 import EquipoRouter from './src/routes/EquipoRouter.js';
 
 dotenv.config();

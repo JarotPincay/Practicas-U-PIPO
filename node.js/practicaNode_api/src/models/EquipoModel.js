@@ -9,24 +9,24 @@ export const Equipo = sequelize.define(
             autoIncrement: true
         },
         nombre:{
-            type: DataTypes.STRING(10),
+            type: DataTypes.STRING,
             allowNull: false,
     
         },
         ciudad:{
-            type: DataTypes.STRING(10),
+            type: DataTypes.STRING,
             allowNull:true
         },
         pais:{
-            type: DataTypes.STRING(10),
+            type: DataTypes.STRING,
             allowNull: true
         },
         estadio:{
-            type: DataTypes.STRING(10),
+            type: DataTypes.STRING,
             allowNull:true
         },
         aniofundacion:{
-            type:DataTypes.INTEGER(4),
+            type:DataTypes.INTEGER,
             allowNull:true
         }
 

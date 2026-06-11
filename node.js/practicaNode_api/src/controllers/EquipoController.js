@@ -54,13 +54,14 @@ export const FindById = async(req,res)=>{
             });
          }
 
-         res.status(200).json({
+         return res.status(200).json({
             meesage:'==== USUARIO ENCONTRADO=====',
             data:{
                     id: eq.id,
                     nombre: eq.nombre,
+                    ciudad:eq.ciudad,
                     pais: eq.pais,
-                    año: eq.aniofundacion,
+                    anio: eq.aniofundacion,
                     estadio: eq.estadio
 
             }
