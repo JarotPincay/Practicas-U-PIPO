@@ -24,3 +24,20 @@ export const CreateEquipo = async(req,res)=>{
 
 };
 
+export const GetAllEqipo=async(req,res)=>{
+    try {
+        const equipos = await Equipo.findAll();
+        return res.status(200).json({
+                equipos
+        });
+
+
+    } catch (error) {
+        return res.status(500).json({
+            message:'ERROR EN EL SERVIDOR ',error:error.message
+        });
+    }
+
+
+
+};
