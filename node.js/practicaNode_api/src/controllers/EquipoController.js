@@ -41,3 +41,36 @@ export const GetAllEqipo=async(req,res)=>{
 
 
 };
+
+
+export const FindById = async(req,res)=>{
+    try {
+        const {id} = req.params;
+        const eq = await Equipo.findByPk(id);
+
+         if(!eq){
+            res.status(404).json({
+                message:'===NO SE ENCUENTRA EL ID ==='
+            });
+         }
+
+         res.status(200).json({
+            meesage:'==== USUARIO ENCONTRADO=====',
+            data:{
+                    id: eq.id,
+                    nombre: eq.nombre,
+                    pais: eq.pais,
+                    año: eq.aniofundacion,
+                    estadio: eq.estadio
+
+            }
+         })
+
+
+
+
+    } catch (error) {
+        console.error(' Error al buscar por ID:', error);
+         return res.status(500).json({ message: 'Error en el servidor', error: error.message });
+    }
+};
