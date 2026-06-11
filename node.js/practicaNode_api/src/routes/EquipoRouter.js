@@ -2,7 +2,7 @@ import { Router } from "express";
 import { CreateEquipo, 
         FindById, 
         GetAllEqipo
-    } from "../controllers/EquipoController";
+    } from "../controllers/EquipoController.js";
 
     const router=Router();
 

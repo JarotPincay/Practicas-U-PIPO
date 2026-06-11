@@ -1,34 +1,38 @@
-import { DataType} from "sequelize";
-import { sequelize } from "../config/db";
+import { DataTypes} from "sequelize";
+import { sequelize } from "../config/db.js";
 
 export const Equipo = sequelize.define(
     'Equipo', {
         id:{
-            type: DataType.Integer,
+            type: DataTypes.INTEGER,
             primaryKey:true,
             autoIncrement: true
         },
         nombre:{
-            type: DataType.String(10),
+            type: DataTypes.STRING(10),
             allowNull: false,
     
         },
         ciudad:{
-            type: DataType.String(10),
+            type: DataTypes.STRING(10),
             allowNull:true
         },
         pais:{
-            type: DataType.String(10),
+            type: DataTypes.STRING(10),
             allowNull: true
         },
         estadio:{
-            type: DataType.String(10),
+            type: DataTypes.STRING(10),
             allowNull:true
         },
         aniofundacion:{
-            type:DataType.Integer(4),
+            type:DataTypes.INTEGER(4),
             allowNull:true
         }
 
+    }, 
+    {
+        tableName: 'Equipos',
+        timestamps:true
     }
 );

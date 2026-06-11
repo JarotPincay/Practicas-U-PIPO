@@ -1,4 +1,4 @@
-import { Equipo } from "../models/EquipoModel";
+import { Equipo } from "../models/EquipoModel.js";
 
 export const CreateEquipo = async(req,res)=>{
     try {
@@ -13,7 +13,7 @@ export const CreateEquipo = async(req,res)=>{
                 nombre,ciudad,pais,estadio,aniofundacion
             });
             return res.status(201).json({
-                message:('=====SE HA CREADO UN NUEVO INGRESO====')
+                message:'=====SE HA CREADO UN NUEVO INGRESO===='
             });
 
     } catch (error) {
@@ -49,7 +49,7 @@ export const FindById = async(req,res)=>{
         const eq = await Equipo.findByPk(id);
 
          if(!eq){
-            res.status(404).json({
+            return res.status(404).json({
                 message:'===NO SE ENCUENTRA EL ID ==='
             });
          }
